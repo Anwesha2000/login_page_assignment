@@ -1,0 +1,28 @@
+<!-- templates/registration/signup.html -->
+{% extends 'base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+  <h1>Sign up</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+  </form>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+    
+    body {
+      
+      background-color: #86c7e6;
+    }
+    
+    
+    
+    
+    </style>
+{% endblock %}
